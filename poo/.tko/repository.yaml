@@ -8,7 +8,6 @@ database: database
 expanded:
 - campanha-principal
 - configuracao-e-aquecimento
-- bloco_a-práticas-com-o-git
 - bloco_b-primeiras-classes
 tasks: {}
 flags:

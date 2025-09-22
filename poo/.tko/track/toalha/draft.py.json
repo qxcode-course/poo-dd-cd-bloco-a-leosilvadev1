@@ -107,8 +107,18 @@
         },
         {
             "label": "2025-09-16_20-24-11",
-            "content": "class Towel:\n    def __init__(self, color: str, size: str):\n\n        self.color = color\n        self.size = size\n        self.wetness = 0        \n    def __str__(self): \n\n        return f\"cor:{self.color}, tam:{self.size}, hum:{self.wetness}\"\n\ntowel = Towel(\"green\",\"g\")\ntowel1 = Towel(\"black\",\"p\")\noutra = toalha\n\n\n",
+            "content": "@@ -292,11 +292,25 @@\n k%22,%22p%22)%0A\n+outra = toalha\n %0A%0A%0A\n",
             "lines": "15"
+        },
+        {
+            "label": "2025-09-22_19-07-28",
+            "content": "@@ -136,339 +136,14 @@\n  0  \n-%0A%0A\n     \n-def dry (self, amount:int) -%3E None:%0A        self.wetness =+ amount%0A        if self.wetness %3E= self.getMAxetness():%0A            print(%22toalha encharcada%22)%0A            self.wetness = self.getMaxWetness()%0A%0A    def isDry (self) -%3E bool:%0A        return self.wetness == 0%0A%0A    def WringOut(self) -%3E None:%0A        self.wetness == 0%0A\n+  \n %0A   \n@@ -164,15 +164,8 @@\n elf)\n- -%3E str\n : %0A%0A\n@@ -241,23 +241,21 @@\n %7D%22%0A%0A\n-doguito\n+towel\n  = Towel\n  (%22E\n@@ -254,160 +254,48 @@\n owel\n- \n (%22\n-Encardida%22,%22G%22)%0Adoguito.size = %22M%22%0Aprint(doguito) %0Adoguito,dry(3)%0Aprint(doguito)%0Adoguito.dry(15)%0Adoguito.dry(10)%0Aprint(doguito)%0Aprint(doguito.isDry()\n+green%22,%22g%22)%0Atowel1 = Towel(%22black%22,%22p%22\n )%0A%0A%0A\n",
+            "lines": "15"
+        },
+        {
+            "label": "2025-09-22_19-21-04",
+            "content": "class Towel:\n    def __init__(self, color: str, size: str):\n\n        self.color = color\n        self.size = size\n        self.wetness = 0  \n\n    def dry (self, amount:int) -> None:\n        self.wetness =+ amount\n        if self.wetness >= self.getMAxetness():\n            print(\"toalha encharcada\")\n            self.wetness = self.getMaxWetness()\n\n    def isDry (self) -> bool:\n        return self.wetness == 0\n\n    def WringOut(self) -> None:\n        self.wetness == 0\n\n    def __str__(self) -> str: \n\n        return f\"cor:{self.color}, tam:{self.size}, hum:{self.wetness}\"\n\ndoguito = Towel (\"Encardida\",\"G\")\ndoguito.size = \"M\"\nprint(doguito) \ndoguito,dry(3)\nprint(doguito)\ndoguito.dry(15)\ndoguito.dry(10)\nprint(doguito)\nprint(doguito.isDry())\n\n\n\n",
+            "lines": "35"
         }
     ]
 }
