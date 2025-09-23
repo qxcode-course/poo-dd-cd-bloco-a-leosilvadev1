@@ -1,0 +1,49 @@
+{
+    "patches": [
+        {
+            "label": "2025-09-23_19-27-01",
+            "content": "@@ -1,570 +0,0 @@\n-class Animal:%0A    def __init__(self,species: str, sound: str):%0A        self.species: str = color%0A        self.sound: str = size%0A        self.age: int = 0  %0A    def __str__(self):%0A        return f%22%7Bself.species%7D:%7Bself.age%7D;%7Bself.sound%7D%22%0Adef main():%0A    animal: Animal = Animal(%22%22, %22%22)%0A    while True:%0A        line =input()%0A        print(%22$%22 + line)%0A        args = line.split(%22 %22)%0A%0A    if args%5B0%5D == %22end%22:%0A    break%0A    elif args%5B0%5D == %22init%22:%0A    species == args%5B1%5D%0A    sound == args %5B2%5D%0A    animal == Animal(species,sound)%0A    elif args%5B0%5D == %22show%22:%0A    print (animal)\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-09-23_20-10-15",
+            "content": "@@ -372,16 +372,17 @@\n it(%22 %22)%0A\n+%0A\n     if a\n",
+            "lines": "22"
+        },
+        {
+            "label": "2025-09-23_20-11-33",
+            "content": "@@ -406,17 +406,16 @@\n    break\n-:\n %0A    eli\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-09-23_20-11-41",
+            "content": "@@ -397,20 +397,16 @@\n  %22end%22:%0A\n-    \n     brea\n@@ -406,16 +406,17 @@\n    break\n+:\n %0A    eli\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-09-23_20-11-53",
+            "content": "@@ -439,20 +439,16 @@\n %22init%22:%0A\n-    \n     spec\n@@ -466,20 +466,16 @@\n %5B1%5D%0A    \n-  \n-  \n sound ==\n@@ -484,20 +484,16 @@\n rgs %5B2%5D%0A\n-    \n     anim\n@@ -548,20 +548,16 @@\n %22show%22:%0A\n-    \n     prin\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-09-23_20-12-27",
+            "content": "@@ -410,17 +410,16 @@\n    break\n-:\n %0A    eli\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-09-23_20-12-35",
+            "content": "@@ -149,17 +149,16 @@\n t = 0  %0A\n-%0A\n     def \n@@ -214,17 +214,17 @@\n elf.age%7D\n-:\n+;\n %7Bself.so\n@@ -229,17 +229,16 @@\n sound%7D%22%0A\n-%0A\n def main\n@@ -410,16 +410,17 @@\n    break\n+:\n %0A    eli\n",
+            "lines": "21"
+        },
+        {
+            "label": "2025-09-23_20-14-12",
+            "content": "@@ -374,20 +374,16 @@\n it(%22 %22)%0A\n-    \n     if a\n@@ -399,20 +399,16 @@\n  %22end%22:%0A\n-    \n         \n@@ -413,20 +413,16 @@\n   break%0A\n-    \n     elif\n@@ -441,20 +441,16 @@\n %22init%22:%0A\n-    \n         \n@@ -476,20 +476,16 @@\n         \n-    \n sound ==\n@@ -494,20 +494,16 @@\n rgs %5B2%5D%0A\n-    \n         \n@@ -534,20 +534,16 @@\n ,sound)%0A\n-    \n     elif\n@@ -562,20 +562,16 @@\n %22show%22:%0A\n-    \n         \n",
+            "lines": "23"
+        },
+        {
+            "label": "2025-09-23_20-15-20",
+            "content": "class Animal:\n    def __init__(self,species: str, sound: str):\n        self.species: str = color\n        self.sound: str = size\n        self.age: int = 0  \n\n    def __str__(self):\n        return f\"{self.species}:{self.age}:{self.sound}\"\n\ndef main():\n    animal: Animal = Animal(\"\", \"\")\n    while True:\n        line =input()\n        print(\"$\" + line)\n        args = line.split(\" \")\n        if args[0] == \"end\":\n            break\n        elif args[0] == \"init\":\n            species == args[1]\n            sound == args [2]\n            animal == Animal(species,sound)\n        elif args[0] == \"show\":\n            print (animal)",
+            "lines": "23"
+        }
+    ]
+}
