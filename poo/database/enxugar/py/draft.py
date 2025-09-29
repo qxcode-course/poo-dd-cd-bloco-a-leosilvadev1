@@ -8,7 +8,7 @@ class Towel:
 
     def dry (self, amount:int) -> None:
         self.wetness += amount
-        if self.wetness >= self.getMAxetness():
+        if self.wetness >= self.getMaxWetness():
             print("toalha encharcada")
             self.wetness = self.getMaxWetness()
 
@@ -16,7 +16,7 @@ class Towel:
         return self.wetness == 0
 
     def WringOut(self) -> None:
-        self.wetness == 0    
+        self.wetness = 0    
 
     def getMaxWetness(self):
         if self.size == "P":
@@ -46,12 +46,14 @@ def main():
             toalha = Towel(color, size)
         elif args[0] == "mostrar":
             print(toalha)
+        elif args[0] == "torcer":
+            toalha.WringOut()
         elif args[0] == "seca":
             print("sim" if toalha.isDry() else "nao")
-        elif args [0] == "dry":
+        elif args [0] == "enxugar":
             amount: int = int(args[1])
             toalha.dry(amount)
         else:
-                print("Fail:comando inválido")
+            print("Fail:comando inválido")
 
 main()

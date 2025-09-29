@@ -45,3 +45,12 @@
 2025-09-29 20:06:30, EXEC, v:1, k:enxugar, mode:FULL, rate:0, size:57
 2025-09-29 20:07:36, EXEC, v:1, k:enxugar, mode:FULL, rate:0
 2025-09-29 20:07:41, EXEC, v:1, k:enxugar, mode:FULL, rate:30, size:57
+2025-09-29 20:13:35, EXEC, v:1, k:enxugar, mode:FULL, rate:20, size:57
+2025-09-29 20:15:20, EXEC, v:1, k:enxugar, mode:FULL, rate:0, size:59
+2025-09-29 20:15:25, EXEC, v:1, k:enxugar, mode:FULL, rate:0
+2025-09-29 20:15:26, EXEC, v:1, k:enxugar, mode:FULL, rate:20, size:59
+2025-09-29 20:16:09, EXEC, v:1, k:enxugar, mode:FULL, rate:20, size:59
+2025-09-29 20:16:15, EXEC, v:1, k:enxugar, mode:FREE
+2025-09-29 20:17:53, EXEC, v:1, k:enxugar, mode:FULL, rate:20, size:59
+2025-09-29 20:18:53, EXEC, v:1, k:enxugar, mode:FULL, rate:90, size:59
+2025-09-29 20:19:40, EXEC, v:1, k:enxugar, mode:FULL, rate:100, size:59
