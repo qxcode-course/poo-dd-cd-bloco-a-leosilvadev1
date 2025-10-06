@@ -128,3 +128,32 @@
 2025-10-06 01:17:03, SELF, v:1, k:calculadora, rate:100, human:amigo, alone:7, study:50
 2025-10-06 01:17:18, SELF, v:1, k:enxugar, rate:100, guide:video, alone:7, study:70
 2025-10-06 01:17:30, SELF, v:1, k:toalha, rate:100, guide:video, alone:5, study:80
+2025-10-06 01:23:07, SELF, v:1, k:toalha, rate:100, guide:video, alone:5, study:80
+2025-10-06 01:26:00, MOVE, v:1, k:toalha, mode:PICK
+2025-10-06 01:26:01, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:52
+2025-10-06 01:28:12, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:51
+2025-10-06 01:28:12, EXEC, v:1, k:toalha, mode:LOCK, rate:0, size:51
+2025-10-06 01:28:27, EXEC, v:1, k:toalha, mode:FREE, size:51
+2025-10-06 01:31:41, MOVE, v:1, k:toalha, mode:BACK
+2025-10-06 01:34:38, MOVE, v:1, k:carro, mode:DOWN
+2025-10-06 01:34:40, MOVE, v:1, k:carro, mode:PICK
+2025-10-06 01:34:41, EXEC, v:1, k:carro, mode:FULL, rate:0, size:0
+2025-10-06 01:43:59, EXEC, v:1, k:carro, mode:FULL, rate:0, size:16
+2025-10-06 01:44:33, EXEC, v:1, k:carro, mode:FULL, rate:0, size:21
+2025-10-06 01:52:39, EXEC, v:1, k:carro, mode:FULL, rate:0, size:29
+2025-10-06 01:52:43, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-10-06 01:52:46, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-10-06 01:52:46, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-10-06 01:53:06, EXEC, v:1, k:carro, mode:FULL, rate:30, size:29
+2025-10-06 01:54:55, EXEC, v:1, k:carro, mode:FULL, rate:0, size:38
+2025-10-06 01:55:09, EXEC, v:1, k:carro, mode:FULL, rate:50, size:38
+2025-10-06 01:57:18, EXEC, v:1, k:carro, mode:FULL, rate:50
+2025-10-06 01:58:10, EXEC, v:1, k:carro, mode:FULL, rate:50, size:44
+2025-10-06 02:22:03, EXEC, v:1, k:carro, mode:FULL, rate:60, size:55
+2025-10-06 02:22:43, EXEC, v:1, k:carro, mode:FULL, rate:60, size:58
+2025-10-06 02:25:32, EXEC, v:1, k:carro, mode:FULL, rate:60, size:63
+2025-10-06 02:29:44, EXEC, v:1, k:carro, mode:FULL, rate:0, size:77
+2025-10-06 02:30:13, EXEC, v:1, k:carro, mode:FULL, rate:0, size:77
+2025-10-06 02:33:13, EXEC, v:1, k:carro, mode:FULL, rate:0, size:77
+2025-10-06 02:33:30, EXEC, v:1, k:carro, mode:FULL, rate:0
+2025-10-06 02:33:54, EXEC, v:1, k:carro, mode:FULL, rate:100, size:77
