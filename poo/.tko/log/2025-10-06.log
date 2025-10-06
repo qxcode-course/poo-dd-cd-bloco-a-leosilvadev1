@@ -157,3 +157,5 @@
 2025-10-06 02:33:13, EXEC, v:1, k:carro, mode:FULL, rate:0, size:77
 2025-10-06 02:33:30, EXEC, v:1, k:carro, mode:FULL, rate:0
 2025-10-06 02:33:54, EXEC, v:1, k:carro, mode:FULL, rate:100, size:77
+2025-10-06 02:38:33, MOVE, v:1, k:carro, mode:BACK
+2025-10-06 02:39:05, SELF, v:1, k:carro, rate:100, human:amigo, guide:video, alone:8, study:70

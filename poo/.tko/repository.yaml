@@ -12,6 +12,7 @@ expanded:
 tasks:
   toalha: '{rate:100, guide:video, alone:5, study:80}'
   animal: '{rate:100, human:amigo, alone:6}'
+  carro: '{rate:100, human:amigo, guide:video, alone:8, study:70}'
   calculadora: '{rate:100, human:amigo, alone:7, study:50}'
   enxugar: '{rate:100, guide:video, alone:7, study:70}'
 flags:
