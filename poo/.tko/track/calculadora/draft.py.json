@@ -1,0 +1,159 @@
+{
+    "patches": [
+        {
+            "label": "2025-10-06_00-25-44",
+            "content": "@@ -1,1425 +0,0 @@\n-class Calculadora:%0A    def __init__(self,batteryMax: int):%0A         self.batteryMax: int = batteryMax%0A        self.battery: int = 0%0A        self.display: float = 0.0%0A%0A    def __str__(self) -%3E str:%0A        return (f%22display = %7Bself.display:.2f%7D, battery = %7Bself.battery%7D%22)%0A%0A    def  Tostring(self) -%3E str:%0A        return self_str_()%0A%0A    def makeSound(self) -%3E str:%0A        if self.age == 0:%0A            return %22---%22%0A        elif self.age %3E= 4:%0A            return %22RIP%22%0A        return self.sound%0A%0A    def ageBy(self,increment: int) -%3E None:%0A        if self.age %3E= 4:%0A            print(f%22warning: %7Bself.species%7D morreu%22)%0A            return%0A        self.age += increment  %0A        if self.age %3E= 4:%0A            self.age = 4%0A            print(f%22warning: %7Bself.species%7D morreu%22)%0A    %0Adef main():%0A    animal = None%0A    while True:%0A        try:%0A            line =input().strip()%0A        except EOFError:%0A            break%0A%0A        if not line:%0A            continue%0A%0A        print(f%22$%7Bline%7D%22)%0A%0A        parts = line.split()%0A        cmd = parts%5B0%5D%0A    %0A        if cmd == %22end%22:%0A            break%0A%0A        elif cmd == %22init%22:%0A           species,sound = parts%5B1%5D,parts%5B2%5D%0A           animal=Animal(species,sound)%0A%0A        elif cmd == %22show%22:%0A            print (animal)%0A%0A        elif cmd == %22grow%22:%0A            inc = int(parts%5B1%5D)   %0A            animal.ageBy(inc)%0A%0A        elif cmd == %22noise%22:%0A            print(animal.makeSound())%0Amain()%0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-10-06_00-28-55",
+            "content": "@@ -274,26 +274,246 @@\n     \n- def Charge\n+def  Tostring(self) -%3E str:%0A        return self_str_()%0A%0A    def makeSound(self) -%3E str:%0A        if self.age == 0:%0A            return %22---%22%0A        elif self.age %3E= 4:%0A            return %22RIP%22%0A        return self.sound%0A%0A    def ageBy\n (self,\n- \n incr\n@@ -522,14 +522,17 @@\n ent:\n+ \n int)\n+ \n -%3E\n+ \n None\n@@ -545,22 +545,118 @@\n     \n+if \n self.\n-battery\n+age %3E= 4:%0A            print(f%22warning: %7Bself.species%7D morreu%22)%0A            return%0A        self.age \n +=\n+ \n incr\n@@ -660,16 +660,18 @@\n ncrement\n+  \n %0A       \n@@ -683,82 +683,96 @@\n elf.\n-battery%3Eself.batteryMax:%0A            self.battery=self.batteryMax%0A        \n+age %3E= 4:%0A            self.age = 4%0A            print(f%22warning: %7Bself.species%7D morreu%22)%0A\n     \n",
+            "lines": "61"
+        },
+        {
+            "label": "2025-10-06_00-35-41",
+            "content": "@@ -86,33 +86,32 @@\n int = batteryMax\n-:\n %0A        self.ba\n@@ -124,17 +124,16 @@\n  int = 0\n-:\n %0A       \n@@ -158,17 +158,16 @@\n at = 0.0\n-:\n %0A%0A    de\n@@ -424,16 +424,28 @@\n teryMax%0A\n+            \n %0Adef mai\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-06_00-35-52",
+            "content": "@@ -94,16 +94,17 @@\n tteryMax\n+:\n %0A       \n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-06_00-36-06",
+            "content": "@@ -124,16 +124,17 @@\n  int = 0\n+:\n %0A       \n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-06_00-36-10",
+            "content": "@@ -158,16 +158,17 @@\n at = 0.0\n+:\n %0A%0A    de\n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-06_00-45-09",
+            "content": "@@ -429,232 +429,8 @@\n ax%0A%0A\n-      def Sum(self, num1:float, num2:float)-%3ENone:%0A        if self.battery==0:%0A            print(%22fail: bateria insuficiente%22)%0A            return%0A        else:%0A            self.display=num1+num2%0A            self.battery-=1%0A%0A\n def \n",
+            "lines": "47"
+        },
+        {
+            "label": "2025-10-06_00-45-32",
+            "content": "@@ -52,32 +52,33 @@\n : int):%0A        \n+ \n self.batteryMax:\n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-10-06_00-46-42",
+            "content": "@@ -301,20 +301,18 @@\n ent:int)\n- \n -%3E\n- \n None:%0A  \n@@ -467,20 +467,18 @@\n 2:float)\n- \n -%3E\n- \n None:%0A  \n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-10-06_00-46-57",
+            "content": "@@ -426,24 +426,26 @@\n eryMax%0A%0A    \n+  \n def Sum(self\n@@ -471,32 +471,32 @@\n float) -%3E None:%0A\n-\n         if self.\n@@ -623,16 +623,16 @@\n m1+num2%0A\n+\n         \n@@ -656,264 +656,8 @@\n =1%0A%0A\n-    def Div(self, num1:float, num2:float)-%3ENone:%0A        if self.battery==0:%0A            print(%22fail: bateria insuficiente%22)%0A            return%0A        if num2==0:%0A            print(%22fail: divisao por zero%22)%0A            self.battery-=1%0A            return%0A%0A\n def \n",
+            "lines": "55"
+        },
+        {
+            "label": "2025-10-06_01-01-44",
+            "content": "@@ -309,17 +309,16 @@\n  -%3E None\n- \n :%0A      \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-06_01-02-12",
+            "content": "@@ -1,1349 +1,62 @@\n-class Calculadora:%0A    def __init__(self,batteryMax: int):%0A        self.batteryMax: int = batteryMax%0A        self.battery: int = 0%0A        self.display: float = 0.0%0A%0A    def __str__(self) -%3E str:%0A        return (f%22display = %7Bself.display:.2f%7D, battery = %7Bself.battery%7D%22)%0A%0A     def Charge(self, increment:int) -%3E None :%0A        self.battery+=increment%0A        if self.battery%3Eself.batteryMax:%0A            self.battery=self.batteryMax%0A%0A    def Sum(self, num1:float, num2:float) -%3E None :%0A        if self.battery==0:%0A            print(%22fail: bateria insuficiente%22)%0A            return%0A        else:%0A            self.display=num1+num2%0A            self.battery-=1%0A%0A    def Div(self, num1:float, num2:float)-%3ENone:%0A        if self.battery==0:%0A            print(%22fail: bateria insuficiente%22)%0A            return%0A        if num2==0:%0A            print(%22fail: divisao por zero%22)%0A            self.battery-=1%0A            return%0A%0Adef main():%0A    animal = None%0A    while True:%0A        try:%0A            line =input().strip()%0A        except EOFError:%0A            break%0A%0A        if not line:%0A            continue%0A%0A        print(f%22$%7Bline%7D%22)%0A%0A        parts = line.split()%0A        cmd = parts%5B0%5D%0A    %0A        if cmd == %22end%22:%0A            break%0A%0A        elif cmd == %22init%22:%0A           species,sound = parts%5B1%5D,parts%5B2%5D%0A           animal=Animal(species,sound)%0A%0A\n+@@ -468,33 +468,32 @@%0A 2:float) -%253E None%0A- %0A :%250A\n         \n elif\n@@ -55,220 +55,11 @@\n     \n-el\n if \n-cmd == %22show%22:%0A            print (animal)%0A%0A        elif cmd == %22grow%22:%0A            inc = int(parts%5B1%5D)   %0A            animal.ageBy(inc)%0A%0A        elif cmd == %22noise%22:%0A            print(animal.makeSound())%0Amain()\n+sel\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-10-06_01-02-17",
+            "content": "@@ -302,32 +302,33 @@\n nt:int) -%3E None \n+:\n %0A        self.ba\n@@ -477,16 +477,17 @@\n -%3E None \n+:\n %0A       \n@@ -689,28 +689,26 @@\n  num2:float)\n- \n -%3E\n- \n None:%0A      \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-06_01-02-29",
+            "content": "@@ -301,33 +301,33 @@\n ent:int) -%3E None\n-:\n+ \n %0A        self.ba\n@@ -467,33 +467,33 @@\n 2:float) -%3E None\n-:\n+ \n %0A        if self\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-06_01-02-41",
+            "content": "@@ -941,10 +941,8 @@\n None\n- :\n %0A   \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-06_01-02-50",
+            "content": "@@ -933,24 +933,25 @@\n nimal = None\n+ \n :%0A    while \n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-06_01-02-56",
+            "content": "@@ -1,8 +1,30 @@\n+@@ -1,1559 +1,171 @@%0A-\n class Ca\n@@ -33,17 +33,19 @@\n uladora:\n-%0A\n+%250A\n     def \n@@ -75,17 +75,19 @@\n x: int):\n-%0A\n+%250A\n         \n@@ -119,17 +119,19 @@\n tteryMax\n-%0A\n+%250A\n         \n@@ -151,17 +151,19 @@\n  int = 0\n-%0A\n+%250A\n         \n@@ -187,18 +187,22 @@\n at = 0.0\n-%0A%0A\n+%250A%250A\n     def \n@@ -220,15 +220,19 @@\n f) -\n-%3E\n+%253E\n  str:\n-%0A\n+%250A\n     \n@@ -244,17 +244,19 @@\n eturn (f\n-%22\n+%2522\n display \n@@ -253,25 +253,27 @@\n 22display = \n-%7B\n+%257B\n self.display\n@@ -276,17 +276,19 @@\n play:.2f\n-%7D\n+%257D\n , batter\n@@ -291,17 +291,19 @@\n ttery = \n-%7B\n+%257B\n self.bat\n@@ -306,21 +306,29 @@\n .battery\n-%7D%22)%0A%0A\n+%257D%2522)%250A%250A\n      def\n@@ -353,31 +353,35 @@\n ement:int) -\n-%3E\n+%253E\n None:\n-%0A\n+%250A\n         self\n@@ -399,17 +399,19 @@\n ncrement\n-%0A\n+%250A\n         \n@@ -425,17 +425,19 @@\n .battery\n-%3E\n+%253E\n self.bat\n@@ -444,17 +444,19 @@\n teryMax:\n-%0A\n+%250A\n         \n@@ -487,18 +487,22 @@\n tteryMax\n-%0A%0A\n+%250A%250A\n     def \n@@ -528,39 +528,43 @@\n t, num2:float) -\n-%3E\n+%253E\n None:\n-%0A\n+%250A\n         if self.\n@@ -566,33 +566,35 @@\n self.battery==0:\n-%0A\n+%250A\n             prin\n@@ -587,33 +587,35 @@\n           print(\n-%22\n+%2522\n fail: bateria in\n@@ -616,35 +616,39 @@\n ria insuficiente\n-%22)%0A\n+%2522)%250A\n             retu\n@@ -641,33 +641,35 @@\n           return\n-%0A\n+%250A\n         else:%0A  \n@@ -665,17 +665,19 @@\n    else:\n-%0A\n+%250A\n         \n@@ -702,17 +702,19 @@\n um1+num2\n-%0A\n+%250A\n         \n@@ -732,18 +732,22 @@\n ttery-=1\n-%0A%0A\n+%250A%250A\n     def \n@@ -785,15 +785,19 @@\n t) -\n-%3E\n+%253E\n None:\n-%0A\n+%250A\n     \n@@ -815,25 +815,27 @@\n .battery==0:\n-%0A\n+%250A\n             \n@@ -836,25 +836,27 @@\n       print(\n-%22\n+%2522\n fail: bateri\n@@ -869,19 +869,23 @@\n ficiente\n-%22)%0A\n+%2522)%250A\n         \n@@ -894,17 +894,19 @@\n   return\n-%0A\n+%250A\n         \n@@ -916,17 +916,19 @@\n num2==0:\n-%0A\n+%250A\n         \n@@ -937,17 +937,19 @@\n   print(\n-%22\n+%2522\n fail: di\n@@ -962,19 +962,23 @@\n por zero\n-%22)%0A\n+%2522)%250A\n         \n@@ -996,17 +996,19 @@\n ttery-=1\n-%0A\n+%250A\n         \n@@ -1017,18 +1017,22 @@\n   return\n-%0A%0A\n+%250A%250A\n def main\n@@ -1034,17 +1034,19 @@\n  main():\n-%0A\n+%250A\n     anim\n@@ -1055,17 +1055,19 @@\n  = None:\n-%0A\n+%250A\n     whil\n@@ -1073,17 +1073,19 @@\n le True:\n-%0A\n+%250A\n         \n@@ -1088,17 +1088,19 @@\n     try:\n-%0A\n+%250A\n         \n@@ -1124,17 +1124,19 @@\n .strip()\n-%0A\n+%250A\n         \n@@ -1151,17 +1151,19 @@\n OFError:\n-%0A\n+%250A\n         \n@@ -1163,34 +1163,38 @@\n            break\n-%0A%0A\n+%250A%250A\n         if not l\n@@ -1197,17 +1197,19 @@\n ot line:\n-%0A\n+%250A\n         \n@@ -1220,18 +1220,22 @@\n continue\n-%0A%0A\n+%250A%250A\n         \n@@ -1245,20 +1245,32 @@\n nt(f\n-%22$%7Bline%7D%22)%0A%0A\n+%2522$%257Bline%257D%2522)%250A%250A\n     \n@@ -1293,17 +1293,19 @@\n .split()\n-%0A\n+%250A\n         \n@@ -1319,17 +1319,25 @@\n arts\n-%5B0%5D%0A\n+%255B0%255D%250A\n     \n-%0A\n+%250A\n     \n@@ -1354,15 +1354,21 @@\n  == \n-%22end%22:%0A\n+%2522end%2522:%250A\n     \n@@ -1380,18 +1380,22 @@\n    break\n-%0A%0A\n+%250A%250A\n         \n@@ -1410,16 +1410,22 @@\n  == \n-%22\n+%2522\n init\n-%22:%0A\n+%2522:%250A\n     \n@@ -1456,21 +1456,31 @@\n arts\n-%5B1%5D,parts%5B2%5D%0A\n+%255B1%255D,parts%255B2%255D%250A\n     \n@@ -1514,18 +1514,22 @@\n s,sound)\n-%0A%0A\n+%250A%250A\n         \n@@ -1544,16 +1544,22 @@\n  == \n-%22\n+%2522\n show\n-%22:%0A\n+%2522:%250A\n     \n@@ -1580,18 +1580,22 @@\n (animal)\n-%0A%0A\n+%250A%250A\n         \n@@ -1610,16 +1610,22 @@\n  == \n-%22\n+%2522\n grow\n-%22:%0A\n+%2522:%250A\n     \n@@ -1651,16 +1651,22 @@\n arts\n-%5B1%5D\n+%255B1%255D\n )   \n-%0A\n+%250A\n     \n@@ -1694,10 +1694,14 @@\n inc)\n-%0A%0A\n+%250A%250A\n     \n@@ -1720,17 +1720,23 @@\n  == \n-%22\n+%2522\n noise\n-%22:%0A\n+%2522:%250A\n     \n@@ -1772,12 +1772,225 @@\n d())\n-%0A\n+%250A\n main()%0A\n++@@ -300,24 +300,25 @@%250A ment:int) -%25253E%250A+ %250A None:%25250A      %250A@@ -462,32 +462,33 @@%250A , num2:float) -%25253E%250A+ %250A None:%25250A        if%250A@@ -694,16 +694,17 @@%250A loat) -%25253E%250A+ %250A None:%25250A  %0A %250A%0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-10-06_01-03-08",
+            "content": "@@ -300,25 +300,24 @@\n ment:int) -%3E\n- \n None:%0A      \n@@ -461,33 +461,32 @@\n , num2:float) -%3E\n- \n None:%0A        if\n@@ -692,17 +692,16 @@\n loat) -%3E\n- \n None:%0A  \n@@ -1174,25 +1174,24 @@\n    %0A        \n- \n if cmd ==%22en\n@@ -1187,16 +1187,17 @@\n f cmd ==\n+ \n %22end%22:%0A \n@@ -1213,24 +1213,25 @@\n   break%0A\n+%0A\n         \n if cmd =\n@@ -1214,32 +1214,34 @@\n  break%0A%0A        \n+el\n if cmd ==%22init%22:\n@@ -1233,16 +1233,17 @@\n f cmd ==\n+ \n %22init%22:%0A\n@@ -1257,37 +1257,41 @@\n     \n- batteryMax:int=int(\n+species,sound = parts%5B1%5D,\n parts%5B\n-1%5D)\n+2%5D\n %0A   \n@@ -1302,42 +1302,37 @@\n     \n- calculator=Calculator(batteryMax)\n+animal=Animal(species,sound)%0A\n %0A   \n@@ -1328,32 +1328,34 @@\n sound)%0A%0A        \n+el\n if cmd ==%22charge\n@@ -1351,15 +1351,14 @@\n d ==\n-%22charge\n+ %22show\n %22:%0A \n@@ -1372,85 +1372,32 @@\n     \n-increment:int=int(parts%5B1%5D)%0A            calculator.Charge(increment\n+print (animal\n )%0A\n+%0A\n         \n if c\n@@ -1384,32 +1384,34 @@\n nimal)%0A%0A        \n+el\n if cmd ==%22show%22:\n@@ -1403,19 +1403,20 @@\n f cmd ==\n-%22sh\n+ %22gr\n ow%22:%0A   \n@@ -1428,164 +1428,127 @@\n     \n-print(calculator)%0A        if cmd ==%22sum%22:%0A            num1:float=float(parts%5B1%5D)%0A            num2:float=float(parts%5B2%5D)%0A            calculator.Sum(num1,num2\n+inc = int(parts%5B1%5D)   %0A            animal.ageBy(inc)%0A%0A        elif cmd == %22noise%22:%0A            print(animal.makeSound()\n )%0Ama\n",
+            "lines": "64"
+        },
+        {
+            "label": "2025-10-06_01-04-30",
+            "content": "@@ -1,1644 +1,49 @@\n-class Calculadora:%0A    def __init__(self,batteryMax: int):%0A        self.batteryMax: int = batteryMax%0A        self.battery: int = 0%0A        self.display: float = 0.0%0A%0A    def __str__(self) -%3E str:%0A        return (f%22display = %7Bself.display:.2f%7D, battery = %7Bself.battery%7D%22)%0A%0A     def Charge(self, increment:int) -%3E None%0A        self.battery+=increment%0A        if self.battery%3Eself.batteryMax:%0A            self.battery=self.batteryMax%0A%0A    def Sum(self, num1:float, num2:float) -%3E None:%0A        if self.battery==0:%0A            print(%22fail: bateria insuficiente%22)%0A            return%0A        else:%0A            self.display=num1+num2%0A            self.battery-=1%0A%0A    def Div(self, num1:float, num2:float) -%3E None:%0A        if self.battery==0:%0A            print(%22fail: bateria insuficiente%22)%0A            return%0A        if num2==0:%0A            print(%22fail: divisao por zero%22)%0A            self.battery-=1%0A            return%0A%0Adef main():%0A    animal = None:%0A    while True:%0A        try:%0A            line =input().strip()%0A        except EOFError:%0A            break%0A%0A        if not line:%0A            continue%0A%0A        print(f%22$%7Bline%7D%22)%0A%0A        parts = line.split()%0A        cmd = parts%5B0%5D%0A    %0A         if cmd ==%22end%22:%0A            break%0A        if cmd ==%22init%22:%0A            batteryMax:int=int(parts%5B1%5D)%0A            calculator=Calculator(batteryMax)%0A        if cmd ==%22charge%22:%0A            increment:int=int(parts%5B1%5D)%0A            calculator.Charge(increment)%0A        if cmd ==%22show%22:%0A            print(calculator)%0A        if cmd ==%22sum%22:%0A            num1:float=float(parts%5B1%5D)%0A            num2:float=float(parts%5B2%5D)%0A            calculator.Sum(num1,num2)%0Amain()\n+@@ -309,16 +309,17 @@%0A  -%253E None%0A+:%0A %250A       \n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-10-06_01-04-45",
+            "content": "@@ -1,1645 +1,65 @@\n-class Calculadora:%0A    def __init__(self,batteryMax: int):%0A        self.batteryMax: int = batteryMax%0A        self.battery: int = 0%0A        self.display: float = 0.0%0A%0A    def __str__(self) -%3E str:%0A        return (f%22display = %7Bself.display:.2f%7D, battery = %7Bself.battery%7D%22)%0A%0A     def Charge(self, increment:int) -%3E None:%0A        self.battery+=increment%0A        if self.battery%3Eself.batteryMax:%0A            self.battery=self.batteryMax%0A%0A    def Sum(self, num1:float, num2:float) -%3E None:%0A        if self.battery==0:%0A            print(%22fail: bateria insuficiente%22)%0A            return%0A        else:%0A            self.display=num1+num2%0A            self.battery-=1%0A%0A    def Div(self, num1:float, num2:float) -%3E None:%0A        if self.battery==0:%0A            print(%22fail: bateria insuficiente%22)%0A            return%0A        if num2==0:%0A            print(%22fail: divisao por zero%22)%0A            self.battery-=1%0A            return%0A%0Adef main():%0A    animal = None:%0A    while True:%0A        try:%0A            line =input().strip()%0A        except EOFError:%0A            break%0A%0A        if not line:%0A            continue%0A%0A        print(f%22$%7Bline%7D%22)%0A%0A        parts = line.split()%0A        cmd = parts%5B0%5D%0A    %0A         if cmd ==%22end%22:%0A            break%0A        if cmd ==%22init%22:%0A            batteryMax:int=int(parts%5B1%5D)%0A            calculator=Calculator(batteryMax)%0A        if cmd ==%22charge%22:%0A            increment:int=int(parts%5B1%5D)%0A            calculator.Charge(increment)%0A        if cmd ==%22show%22:%0A            print(calculator)%0A        if cmd ==%22sum%22:%0A            num1:float=float(parts%5B1%5D)%0A            num2:float=float(parts%5B2%5D)%0A            calculator.Sum(num1,num2)%0Amain()\n+@@ -301,33 +301,32 @@%0A ent:int) -%253E None%0A-:%0A %250A        self.ba\n %0A\n",
+            "lines": "4"
+        },
+        {
+            "label": "2025-10-06_01-07-01",
+            "content": "@@ -265,24 +265,25 @@\n ery%7D%22)%0A%0A    \n+ \n def Charge(s\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-06_01-07-10",
+            "content": "@@ -936,16 +936,17 @@\n l = None\n+:\n %0A    whi\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-06_01-07-15",
+            "content": "@@ -1193,16 +1193,15 @@\n d ==\n- \n %22end%22:%0A\n+\n     \n@@ -1231,17 +1231,16 @@\n f cmd ==\n- \n %22init%22:%0A\n@@ -1343,17 +1343,16 @@\n f cmd ==\n- \n %22charge%22\n@@ -1451,17 +1451,16 @@\n f cmd ==\n- \n %22show%22:%0A\n@@ -1489,16 +1489,16 @@\n ulator)%0A\n+\n         \n@@ -1506,17 +1506,16 @@\n f cmd ==\n- \n %22sum%22:%0A \n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-06_01-07-31",
+            "content": "@@ -1171,32 +1171,33 @@\n 0%5D%0A    %0A        \n+ \n if cmd == %22end%22:\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-06_01-07-41",
+            "content": "@@ -1307,22 +1307,19 @@\n ator\n- = \n+=\n Calcula\n-d\n+t\n or\n-a\n (bat\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-06_01-10-51",
+            "content": "@@ -909,85 +909,8 @@\n turn\n-%0A        else:%0A            self.display=num1/num2%0A            self.battery-=1\n %0A%0Ade\n",
+            "lines": "62"
+        },
+        {
+            "label": "2025-10-06_01-13-02",
+            "content": "@@ -334,12 +334,10 @@\n tery\n- \n +=\n- \n incr\n@@ -369,11 +369,9 @@\n tery\n- %3E \n+%3E\n self\n@@ -407,19 +407,17 @@\n .battery\n- = \n+=\n self.bat\n@@ -491,36 +491,34 @@\n  if self.battery\n- \n ==\n- \n 0:%0A            p\n@@ -613,18 +613,14 @@\n play\n- = \n+=\n num1\n- + \n++\n num2\n@@ -644,20 +644,18 @@\n .battery\n- \n -=\n- \n 1%0A%0A    d\n@@ -723,20 +723,18 @@\n .battery\n- \n ==\n- \n 0:%0A     \n@@ -810,20 +810,18 @@\n  if num2\n- \n ==\n- \n 0:%0A     \n@@ -883,20 +883,18 @@\n .battery\n- \n -=\n- \n 1%0A      \n@@ -948,18 +948,14 @@\n play\n- = \n+=\n num1\n- / \n+/\n num2\n@@ -983,12 +983,10 @@\n tery\n- \n -=\n- \n 1%0A%0Ad\n@@ -1339,27 +1339,25 @@\n tteryMax:int\n- = \n+=\n int(parts%5B1%5D\n@@ -1460,19 +1460,17 @@\n ment:int\n- = \n+=\n int(part\n@@ -1615,27 +1615,25 @@\n   num1:float\n- = \n+=\n float(parts%5B\n@@ -1658,19 +1658,17 @@\n m2:float\n- = \n+=\n float(pa\n@@ -1707,17 +1707,16 @@\n um(num1,\n- \n num2)%0Ama\n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-10-06_01-14-57",
+            "content": "@@ -1309,33 +1309,32 @@\n           break%0A\n-%0A\n         if cmd =\n@@ -1435,17 +1435,16 @@\n eryMax)%0A\n-%0A\n         \n@@ -1546,17 +1546,16 @@\n rement)%0A\n-%0A\n         \n@@ -1602,17 +1602,16 @@\n ulator)%0A\n-%0A\n         \n@@ -1705,24 +1705,24 @@\n t(parts%5B2%5D)%0A\n+\n             \n@@ -1751,153 +1751,8 @@\n um2)\n-%0A%0A           if args%5B0%5D==%22div%22:%0A            num1:float=float(args%5B1%5D)%0A            num2:float=float(args%5B2%5D)%0A            calculator.Div(num1,num2)\n %0Amai\n",
+            "lines": "65"
+        },
+        {
+            "label": "2025-10-06_01-15-32",
+            "content": "@@ -1767,23 +1767,25 @@\n      if \n-cmd \n+args%5B0%5D\n ==\n- \n %22div%22:%0A \n@@ -1806,27 +1806,25 @@\n 1:float=\n- \n float(\n-p\n ar\n-t\n+g\n s%5B1%5D)%0A  \n@@ -1846,28 +1846,27 @@\n float=float(\n-p\n ar\n-t\n+g\n s%5B2%5D)%0A      \n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-10-06_01-15-57",
+            "content": "@@ -1753,32 +1753,35 @@\n  num2)%0A%0A        \n+   \n if cmd == %22div%22:\n",
+            "lines": "74"
+        },
+        {
+            "label": "2025-10-06_01-16-08",
+            "content": "class Calculadora:\n    def __init__(self,batteryMax: int):\n        self.batteryMax: int = batteryMax\n        self.battery: int = 0\n        self.display: float = 0.0\n\n    def __str__(self) -> str:\n        return (f\"display = {self.display:.2f}, battery = {self.battery}\")\n\n    def Charge(self, increment:int) -> None:\n        self.battery += increment\n        if self.battery > self.batteryMax:\n            self.battery = self.batteryMax\n\n    def Sum(self, num1:float, num2:float) -> None:\n        if self.battery == 0:\n            print(\"fail: bateria insuficiente\")\n            return\n        else:\n            self.display = num1 + num2\n            self.battery -= 1\n\n    def Div(self, num1:float, num2:float) -> None:\n        if self.battery == 0:\n            print(\"fail: bateria insuficiente\")\n            return\n        if num2 == 0:\n            print(\"fail: divisao por zero\")\n            self.battery -= 1\n            return\n        else:\n            self.display = num1 / num2\n            self.battery -= 1\n\ndef main():\n    animal = None\n    while True:\n        try:\n            line =input().strip()\n        except EOFError:\n            break\n\n        if not line:\n            continue\n\n        print(f\"${line}\")\n\n        parts = line.split()\n        cmd = parts[0]\n    \n        if cmd == \"end\":\n            break\n\n        if cmd == \"init\":\n            batteryMax:int = int(parts[1])\n            calculator = Calculadora(batteryMax)\n\n        if cmd == \"charge\":\n            increment:int = int(parts[1])\n            calculator.Charge(increment)\n\n        if cmd == \"show\":\n            print(calculator)\n\n        if cmd == \"sum\":\n            num1:float = float(parts[1])\n            num2:float = float(parts[2])\n            calculator.Sum(num1, num2)\n\n        if cmd == \"div\":\n            num1:float= float(parts[1])\n            num2:float=float(parts[2])\n            calculator.Div(num1,num2)\nmain()\n",
+            "lines": "74"
+        }
+    ]
+}

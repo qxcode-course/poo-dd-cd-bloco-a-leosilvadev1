@@ -10,7 +10,7 @@ class Towel:
         self.wetness += amount
         if self.wetness >= self.getMaxWetness():
             print("toalha encharcada")
-            self.wetness = self.getMaxWetness()
+        self.wetness = self.getMaxWetness()
 
     def isDry (self) -> bool:
         return self.wetness == 0
